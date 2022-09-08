@@ -1,0 +1,77 @@
+:root{
+    --color-base-crema:#F2DFC0;
+    --color-base-arena: #EDBA6B;
+    --color-base-amarillo: #F5AB0E;
+    --color-base-naranja: #F76B07;
+    --color-base: rgb(219, 26, 26);
+    --color-base-rojoOscuro: #A01207;
+    --color-letra: #FFF7F7;
+}
+
+body{
+    background-color: var(--color-base-crema);
+}
+
+.mainCompraRealizada{
+    width: 100%;
+    min-height: 600px;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainCliente{
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorParrafoYBoton{
+    width: 40px;
+    height: 200px;
+    background-color: var(--color-base-naranja);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+}
+.   {
+    width: 40px;
+    height: 200px;
+    background-color: var(--color-base-naranja);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.parrafoGraciasPorTuCompra{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.btnVolverAProductos{
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background-color: var(--color-base-rojoOscuro);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnVolverAProductos:hover{
+    background-color: #cf2316;
+}
+
+.enlaceVolverAProductos{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}

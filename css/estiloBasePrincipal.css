@@ -1,0 +1,236 @@
+:root{
+    --color-base-crema:#F2DFC0;
+    --color-base-arena: #EDBA6B;
+    --color-base-amarillo: #F5AB0E;
+    --color-base-naranja: #F76B07;
+    --color-base: rgb(219, 26, 26);
+    --color-base-rojoOscuro: #A01207;
+    --color-letra: #FFF7F7;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+
+
+/* HEADER */
+
+.header{
+    width: 100%;
+    min-height: 80px;
+    max-height: auto;
+    background-color: var(--color-base-rojoOscuro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 80px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.navegacion{
+    width: 600px;
+    height: 80px;
+    background-color: var(--color-base-rojoOscuro);
+}   
+
+.li_navegacion{
+    text-decoration: none;
+    list-style: none;
+}
+
+.enlace_nav{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color-letra);
+}
+
+.ul_navegacion{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* SECCION PRODUCTOS */
+
+.articulo_principal{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-base-arena);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion_titulos, .seccion_tituloHamburguesas, .seccion_tituloPollos, .seccion_tituloCombos{
+    width: 100%;
+    min-height: 200px;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-base-arena);
+    margin-bottom: 50px;
+}
+
+.seccion_tituloHamburguesas, .seccion_tituloPollos, .seccion_tituloCombos{
+    
+    background-color: var(--color-base-rojoOscuro);
+}
+
+.titulo_principal{
+    font-size: 80px;
+    font-family: 'Chango', cursive;
+}
+
+.nombreCliente{
+    font-size: 40px;
+    font-family: 'Chango', cursive;
+}
+
+.titulo_producto{
+ font-size: 80px;
+ font-family: 'Luckiest Guy', cursive;
+}
+
+.titulo_productos{
+    font-size: 25px;
+}
+
+
+.seccion_hamburguesas, .seccion_pollos, .seccion_combos{
+    width: 90%;
+    min-height: 1200px;
+    max-height: auto;
+    height: auto;
+    background-color: var(--color-base-arena);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor_hamburguesa{
+    width: 35%;
+    height: 250px;
+    background-color: aquamarine;
+    align-self:flex-start;
+    cursor:pointer;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-radius: 10px;
+}
+
+.contenedor_hamburguesa:hover{
+    transform: scale(0.9);
+}
+
+.contenedor_imagen{
+    width: 100%;
+    height: 100%;
+    /*flex-grow: 2;*/
+    background-color: brown;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.imagen_producto{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+        border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.contenedor_descripcion{
+    width: 100%;
+    height: 100%;
+   /* flex-grow: 2;*/
+    background-color: var(--color-base-amarillo);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.formulario_comprar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.descripcion_producto{
+    text-align: center;
+}
+
+.dato_producto{
+    font-weight: bold;
+}
+
+.precio{
+    font-weight: normal;
+}
+
+.btnComprar{
+    width: 30%;
+    height: 50px;
+    background-color: var(--color-base-rojoOscuro);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor:pointer;
+    font-weight:600;
+    color: white;
+}
+
+.btnComprar:hover{
+    background-color: #cf1d10;
+}
+
+
+/* FOOTER*/
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color:var(--color-base-naranja);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafo-footer{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.contenedor_redesSociales{
+    width: 80%;
+    height: 70%;
+    background-color: var(--color-base-naranja);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.fab{
+    font-size: 40px;
+    color: black;
+}

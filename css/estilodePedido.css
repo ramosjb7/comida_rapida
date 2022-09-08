@@ -1,0 +1,197 @@
+:root{
+    --color-base-crema:#F2DFC0;
+    --color-base-arena: #EDBA6B;
+    --color-base-amarillo: #F5AB0E;
+    --color-base-naranja: #F76B07;
+    --color-base: rgb(219, 26, 26);
+    --color-base-rojoOscuro: #A01207;
+    --color-letra: #FFF7F7;
+}
+.tituloPedido{
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 50px;
+}
+
+body{
+    background-color: var(--color-base-crema);
+}
+
+.articuloPedido{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-base-crema);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seccion_pedido{
+    width:50%;
+    height: 100%;
+    background-color: var(--color-base-crema);
+}
+
+.formularioPedido{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-base-crema);
+}
+
+.contenedor_pedidoImagen{
+    width: 100%;
+    height: 50%;
+    background-color: var(--color-base-crema);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_imagenproductoCompra{
+    width: 70%;
+    height: 100%;
+}
+
+.imagenPedido{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.contenedor_pedidoDatos{
+    width: 100%;
+    height: 200px;
+    background-color: var(--color-base-crema);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.parrafoNombreProducto, .parrafoDescripcionProducto{
+    font-weight: 600;
+}
+
+.parrafoDescripcion{
+    text-align: center;
+}
+
+/* SECCION DERECHA COMPRA*/
+
+.seccion_pedidoCompra{
+    width: 50%;
+    height: 100%;
+    background-color: var(--color-base-crema);
+}
+
+.contenedorPedidoCantidad{
+    width: 100%;
+    height: 40%;
+    background-color: var(--color-base-crema);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 65px;
+}
+
+.contenedorInputCantidad{
+    height: 30%;
+    /*background-color: aqua;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.parrafoCantidad{
+    font-weight: 600;
+}
+
+.cantidad{
+    width: 200px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    border: 1px solid coral;
+}
+
+.btnCalculoPedido{
+    width: 100px;
+    height: 45px;
+    background-color: var(--color-base-naranja);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.contenedorBtnVolver{
+    width: 100%;
+    height: 160px;
+    background-color: var(--color-base-crema);
+    position: relative;
+}
+
+.btnVolver{
+        width: 100px;
+    height: 45px;
+    background-color: var(--color-base-naranja);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor:pointer;
+    font-weight:600;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 20px;
+}
+
+.enlaceVolver{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*VISTA AL CALCULAR PRECIO TOTAL */
+.seccion_pedidoTotal{
+    display: flex;
+   flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.contenedor_datosPago{
+    width: 100%;
+    height: 50%;
+    background-color: var(--color-base-crema);
+    display: flex;
+   flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.btnRealizarCompra{
+      width: 100px;
+    height: 45px;
+    background-color: var(--color-base-naranja);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.btnCalculoPedido:hover, .btnVolver:hover:hover, .btnRealizarCompra:hover{
+    background-color:#ee4613;
+}
+
+.enlaceRealizarCompra{
+    text-decoration: none;
+    color: black;
+}

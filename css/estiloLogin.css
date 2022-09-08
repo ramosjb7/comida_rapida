@@ -1,0 +1,104 @@
+:root{
+    --color-base-crema:#F2DFC0;
+    --color-base-arena: #EDBA6B;
+    --color-base-amarillo: #F5AB0E;
+    --color-base-naranja: #F76B07;
+    --color-base: rgb(219, 26, 26);
+    --color-base-rojoOscuro: #A01207;
+    --color-letra: #FFF7F7;
+}
+
+body{
+    background-color: var(--color-base-crema);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainLogin{
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.tituloLogin{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 50px;
+}
+
+.formulario{
+    margin-top: 50px;
+    background-color: var(--color-base-rojoOscuro);
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.labelUsuarioLogin{
+    margin-top: 15px;
+    color: var(--color-letra);
+}
+
+.labelContraseñaLogin{
+     color: var(--color-letra);
+}
+
+.usuario, .contraseña{
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.contenedorBotonesLogin{
+    width: 60%;
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btnLogin, .btnVistaRegistrate, .btnVolverInicio{
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background-color: var(--color-base-amarillo);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btnLogin:hover, .btnVistaRegistrate:hover, .btnVolverInicio:hover{
+    background-color:var(--color-base-naranja);
+}
+
+.enlaceVistaRegistrate, .enlaceVolverInicio{
+    text-decoration: none;
+    color: black;
+}
+
+.btnVolverInicio{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 20px;
+}
+
+.separadorMainFooter{
+    width: 100%;
+    height: 100px;
+}
+
